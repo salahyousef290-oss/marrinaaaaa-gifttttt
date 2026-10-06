@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yousef ❤️ Marina</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         PASSWORD SCREEN
+    ========================== -->
+
+    <div id="passwordScreen" class="password-screen">
+
+        <div class="password-hearts">
+            ❤️
+        </div>
+
+        <div class="password-box">
+
+            <div class="lock-icon">🔐</div>
+
+            <h1>Our Little Secret</h1>
+
+            <p>
+                This website is only for<br>
+                <span>Marina ❤️</span>
+            </p>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter the password..."
+                autocomplete="off"
+            >
+
+            <button id="unlockButton">
+                Open My Heart ❤️
+            </button>
+
+            <p id="passwordError"></p>
+
+            <div class="password-hint">
+                💕 Only you know the secret...
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         MAIN WEBSITE
+    ========================== -->
+
+    <main id="mainContent" class="hidden">
+
+        <!-- Floating hearts -->
+        <div id="heartsContainer"></div>
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="small-heart">♡</div>
+
+                <p class="intro">A little website made with love for</p>
+
+                <h1>
+                    Marina
+                    <span>❤️</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    From Yousef, with all my heart.
+                </p>
+
+                <div class="scroll-heart">
+                    ↓
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             OUR STORY
+        ========================== -->
+
+        <section class="section story-section">
+
+            <p class="section-label">OUR STORY</p>
+
+            <h2>
+                Where it all began
+            </h2>
+
+            <p class="section-description">
+                Some dates become memories.
+                Some memories become stories.
+                And some stories become our favorite part of life.
+            </p>
+
+
+            <div class="timeline">
+
+                <!-- Talking -->
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        💬
+                    </div>
+
+                    <div class="timeline-card">
+
+                        <p class="date-label">
+                            APRIL 28, 2026
+                        </p>
+
+                        <h3>
+                            The day we started talking
+                        </h3>
+
+                        <p>
+                            The beginning of something I didn't know
+                            would become so important to me.
+                        </p>
+
+                        <div class="counter" id="talkingCounter">
+                            Loading...
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Meeting -->
+                <div class="timeline-item">
+
+                    <div class="timeline-icon">
+                        🌹
+                    </div>
+
+                    <div class="timeline-card">
+
+                        <p class="date-label">
+                            JUNE 13, 2026
+                        </p>
+
+                        <h3>
+                            The day we first met
+                        </h3>
+
+                        <p>
+                            The day a person I already cared about
+                            became a memory I never want to forget.
+                        </p>
+
+                        <div class="counter" id="meetingCounter">
+                            Loading...
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LOVE MESSAGE
+        ========================== -->
+
+        <section class="section love-section">
+
+            <div class="love-card">
+
+                <div class="quote-mark">
+                    “
+                </div>
+
+                <p class="section-label">
+                    A MESSAGE FOR YOU
+                </p>
+
+                <h2>
+                    Dear Marina,
+                </h2>
+
+                <div class="love-letter">
+
+                    <p>
+                        I don't really know how to put everything I feel
+                        into words, but I know I want you to know how much
+                        you mean to me.
+                    </p>
+
+                    <p>
+                        I love the little things about us. Our conversations,
+                        our jokes, the random moments, the things that only
+                        make sense to us, and every memory we keep creating
+                        together.
+                    </p>
+
+                    <p>
+                        You make ordinary days feel special just by being
+                        part of them.
+                    </p>
+
+                    <p>
+                        I don't need a special day to tell you that I love
+                        you. But if I had to choose one thing I want you to
+                        remember, it's this:
+                    </p>
+
+                    <p class="special-message">
+                        I choose you. ❤️
+                    </p>
+
+                    <p>
+                        And I hope we keep creating memories together,
+                        one day at a time.
+                    </p>
+
+                    <p class="signature">
+                        Forever yours,<br>
+                        <span>Yousef ❤️</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TIME TOGETHER
+        ========================== -->
+
+        <section class="section counter-section">
+
+            <p class="section-label">
+                EVERY SECOND MATTERS
+            </p>
+
+            <h2>
+                Time since we started talking
+            </h2>
+
+            <div class="big-counter">
+
+                <div class="time-box">
+                    <span id="days">0</span>
+                    <small>Days</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">0</span>
+                    <small>Hours</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">0</span>
+                    <small>Minutes</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">0</span>
+                    <small>Seconds</small>
+                </div>
+
+            </div>
+
+            <p class="counter-bottom">
+                And counting... ❤️
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             LITTLE THINGS
+        ========================== -->
+
+        <section class="section reasons-section">
+
+            <p class="section-label">
+                JUST BECAUSE
+            </p>
+
+            <h2>
+                Things I love about us
+            </h2>
+
+            <div class="reasons-grid">
+
+                <div class="reason">
+                    <span>❤️</span>
+                    <h3>Your smile</h3>
+                    <p>
+                        It can make even the worst day feel better.
+                    </p>
+                </div>
+
+                <div class="reason">
+                    <span>✨</span>
+                    <h3>Our conversations</h3>
+                    <p>
+                        Even the random ones I never want to end.
+                    </p>
+                </div>
+
+                <div class="reason">
+                    <span>🌹</span>
+                    <h3>Our memories</h3>
+                    <p>
+                        Every little moment becomes something special.
+                    </p>
+                </div>
+
+                <div class="reason">
+                    <span>🫶</span>
+                    <h3>You</h3>
+                    <p>
+                        Honestly, I don't need another reason.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MUSIC
+        ========================== -->
+
+        <section class="music-section">
+
+            <button id="musicButton" class="music-button">
+                🎵 Play our song
+            </button>
+
+            <audio id="loveSong" loop>
+                <source
+                    src="https://cdn.pixabay.com/audio/2022/10/25/audio_946d6f2a9b.mp3"
+                    type="audio/mpeg"
+                >
+            </audio>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL MESSAGE
+        ========================== -->
+
+        <section class="final-section">
+
+            <div class="final-heart">
+                ❤️
+            </div>
+
+            <h2>
+                I love you, Marina.
+            </h2>
+
+            <p>
+                Today, tomorrow, and every day after that.
+            </p>
+
+            <div class="infinity">
+                ∞
+            </div>
+
+            <p class="copyright">
+                Made with love by Yousef ❤️
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
